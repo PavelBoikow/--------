@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"title": "DL Audio Gryphon Pro 4.150",
+		"itemsInBox": 6,
+		"weight": 180,
+		"price": 10990,
+		"imgSrc": "DL Audio Gryphon Pro 4.150.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Урал BV 1.1200",
+		"itemsInBox": 6,
+		"weight": 205,
+		"price": 7990,
+		"imgSrc": "Урал BV 1.1200.jpg"
+	},
+	{
+		"id": 3,
+		"title": "DL Audio Raven2.750",
+		"itemsInBox": 6,
+		"weight": 182,
+		"price": 16990,
+		"imgSrc": "DL Audio Raven2.750.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Aura STORM-D4.150",
+		"itemsInBox": 6,
+		"weight": 230,
+		"price": 11990,
+		"imgSrc": "Aura STORM-D4.150.jpg"
+	}
+]

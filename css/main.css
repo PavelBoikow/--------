@@ -1,0 +1,545 @@
+
+
+body, html {
+	background-color: white;
+	height: 100%;
+}
+
+h3, h4 {
+	font-family: 'Merriweather', serif;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.header {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	width: 20vmin;
+
+}
+
+.site-title {
+	font-size: 4vmin;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media (max-width: 980px){
+	.site-title  {
+		font-size:3vmin;
+	}
+}
+
+
+.lead{
+	font-size:4vmin;
+}
+.product-img {
+	width: 300px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item-title {
+    font-size: 1.5vmin;
+    font-weight: 500;
+	font-family: 'Merriweather', serif;
+	min-height: 70px;
+}
+
+@media (max-width: 980px){
+	.item-title  {
+		font-size: 1.2rem;
+		min-height: auto;
+	}
+}
+
+.details-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.items {
+	font-family: 'Merriweather', serif;
+	background: #f2ede7;
+	border-radius: 8px;
+	width: 120px;
+	display: flex;
+	font-size: 18px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.items__control {
+	width: 40px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-align: center;
+}
+
+.items__control:hover {
+    background: #eb5a1e;
+    color: #FFF;
+}
+
+.items__current {
+	width: 40px;
+}
+
+/* items--small */
+.items.items--small {
+	width: 90px;
+	font-size: 16px;
+	height: 26px;
+	text-align: center;
+}
+
+.items.items--small .items__control {
+	width: 30px;
+}
+
+.items.items--small .items__current {
+	width: 30px;
+}
+
+.price {
+	text-align: left;
+}
+
+.price__weight {
+	color: #6c757d!important;
+	font-size: 80%;
+	line-height: 1;
+}
+
+.price__currency {
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.btn-outline-warning {
+    color: #eb5a1e;
+    border-color: #eb5a1e;
+}
+
+.btn-outline-warning:hover {
+    color: #FFF;
+    background-color: #eb5a1e;
+    border-color: #eb5a1e;
+}
+
+.cart-item {
+
+}
+
+.cart-item__top {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dee2e6;
+	margin-bottom: 15px;
+}
+
+.cart-item__img  {
+
+}
+
+.cart-item__img img {
+	max-width: 100px;
+	height: auto;
+}
+
+.cart-item__desc {
+	padding-top: 15px;
+	padding-left: 15px;
+	max-width: 208px;
+}
+
+.cart-item__title {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+    line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.cart-item__weight {
+    color: #6c757d!important;
+    font-size: 80%;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.cart-item__details {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.cart-item__details .price__currency {
+	font-size: 18px;
+	margin-left: 15px;
+}
+
+.cart-total {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.delivery-cost {
+
+}
+
+.free {
+	color: #0EA107;
+}
+
+.total-price {
+	color: #EB5A1E;
+}
+
+.rouble {
+	color: #EB5A1E;
+}
+
+.none {
+	display: none;
+}
+
+ul.breadcrumb {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*padding-left: 30%;*/
+	list-style: none;
+	background-color: #FFE4E1;
+  }
+  
+  /* Отображение элементов списка бок о бок */
+  ul.breadcrumb li {
+	display:inline;
+	font-size: 3vmin;
+  }
+  
+  /* Добавить символ косой черты (/) перед/за каждым элементом списка */
+  ul.breadcrumb li+li:before {
+	padding: 5vmin;
+	color: black;
+	content: "|\00a0";
+  }
+  
+  /* Добавить цвет для всех ссылок внутри списка */
+  ul.breadcrumb li a {
+	color: black;
+	text-decoration: none;
+  }
+  
+  /* Добавить цвет на наведении курсора мыши */
+  ul.breadcrumb li a:hover {
+	color: black;
+	text-decoration-line:underline;
+  }
+
+  .container-main{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0 10vmin 0 10vmin;
+	
+  }
+  @media (max-width: 600px) {
+    .container-main{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 22vmin 0 22vmin;
+		
+	  }
+}
+
+
+  .container-main-foto{
+	display:inline-block;
+	padding: 0 3vmin 0 3vmin;
+	width: 38vmin;
+	
+  } 
+
+  @media (max-width: 600px) {
+    .container-main-foto{
+		display:inline-block;
+		padding: 0 3vmin 0 3vmin;
+		width: 50vmin;
+		
+	  } 
+}
+
+  .container-main-ref{
+	display: block;
+	text-align: center;
+	font-size: 3vmin;
+	padding: 0 3vmin 0 3vmin;
+  }
+
+  /* Базовые стили слоя затемнения и модального окна  */
+.overlay {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	visibility: hidden;
+	/* фон затемнения */
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	position: fixed; /* фиксированное поцизионирование */
+	cursor: default; /* тип курсара */
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+	}
+	.overlay:target {
+	visibility: visible;
+	opacity: 1;
+	}
+	.is-image {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display:block;
+	margin: 10;
+	width: 100%;
+	height: auto;
+	/* скругление углов встроенных картинок */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	}
+	/* встроенные элементы м-медиа, фреймы */
+	embed, iframe {
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0; 
+	display:block;
+	margin: auto;
+	min-width: 320px;
+	max-width: 600px;
+	width: 100%;
+	}
+	.popup h1 { /* заголовок 1 */
+	color: #008000;
+	text-align: left;
+	text-shadow: 0 1px 3px rgba(0,0,0,.3);
+	font:24px 'Trebuchet MS', Helvetica, sans-serif;
+	font-weight: bold;
+	}
+	.popup h2 { /* заголовок 2 */
+	color: #008000;
+	text-align: left;
+	text-shadow: 0 1px 3px rgba(0,0,0,.3);
+	font:22px 'Trebuchet MS', Helvetica, sans-serif;
+	}
+	/*** Формируем стили модального окна ***/
+	.popup {
+	top: 0;
+	right: 0;
+	left: 0;
+	font-size: 14px;
+	z-index: 10;
+	display: block;
+	visibility: hidden;
+	margin: 0 auto;
+	width: 90%;
+	min-width: 320px;
+	max-width: 600px;
+	/* фиксированное позиционирование, окно стабильно при прокрутке */
+	position: fixed;
+	padding: 15px;
+	border: 1px solid #383838;
+	/* скругление углов */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	/* внешняя тень блока */
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+	/* полная прозрачность окна, появление при клике */
+	opacity: 0;
+	/* эффект перехода (появление) */
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	-ms-transition: all ease .5s;
+	-o-transition: all ease .5s;
+	transition: all ease .5s;
+	}
+	/* активируем появление окна и затемнение фона */
+	.overlay:target+.popup {
+	top: 20%; /* положение окна от верха страницы при появлении */
+	visibility: visible;
+	opacity: 1; /* убираем прозрачность */
+	}
+	/* формируем кнопку закрытия */
+	.close {
+	position: absolute;
+	top: -10px;
+	right: -10px;padding: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	background-color: rgba(61, 61, 61, 0.8);
+	-webkit-box-shadow: 0px 0px 10px #000;
+	-moz-box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 10px #000;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 8px;
+	/* задаём значения и эффект перехода при наведении */
+	-webkit-transition: all ease .8s;
+	-moz-transition: all ease .8s;
+	-ms-transition: all ease .8s;
+	-o-transition: all ease .8s;
+	transition: all ease .8s;
+	}
+	.close:before {
+	color: rgba(255, 255, 255, 0.9);
+	content: "X";
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+	font-size: 13px;
+	}
+	.close:hover {
+	background-color: rgba(252, 20, 0, 0.8);
+	/* крутим кнопку при наведении */
+	    
+	}
+	/* опционально при добавлении вложений */
+	.popup p, .popup div {
+	margin-bottom: 10px;
+	}
+	
+	
+	/* button */
+	
+	.button {
+	
+	  font-size: 20px;
+	  color: white;
+	  width: 270px;
+	  text-decoration: none;
+	  padding: 10px 5px;
+	  border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	  font-family: Helvetica, Arial, sans-serif;
+	  transition: all 0.3s;
+	  -moz-transition: all 0.3s;
+	  -webkit-transition: all 0.3s;
+	  cursor: pointer;
+	
+	}
+	.button-blue {
+	  background-color: #0600FF;
+	  }
+	.button:hover {
+	  background-color: #5555ff;
+	  box-shadow:0 0 10px 10px #b7b7ff inset;
+	}
+	.button:active {
+		background-color: #0000ff;
+		box-shadow:0 0 0 0 #ffffff; 
+	}
+
+
+	.contact_left {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}

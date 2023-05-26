@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>AutoSound44</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+
+	<ul class="breadcrumb">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="info.html">О Нас</a></li>
+		<li><a href="login.html">Войти</a></li>
+	</ul>
+
+	<header class="header">
+		
+		<div class="container text-center">
+			<img class="logo" src="img/logo/car.jpg" width="250" alt="Машина">
+			<div class="site-title">AutoSound44</div>
+			<p class="lead">Сабвуферы</p>
+		</div>
+	</header>
+
+    <div class="container mb-5">
+		<div class="row">
+
+			<!-- Товары -->
+			<div class="col-md-8">
+				<div class="row" id="products-container">
+
+				</div>
+			</div>
+
+			<!-- Корзина -->
+			<div class="col-md-4">
+
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h4>
+
+							<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+
+						</div>
+						<!-- // cart-wrapper -->
+
+						<!-- Стоимость заказа -->
+						<div class="cart-total">
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span>
+								<span class="delivery-cost">700 ₽</span><br>
+								<span class="small">Бесплатно при заказе от 5000 ₽</span>
+							</p>
+							<p><span class="h5">Итого:</span>
+								<span class="total-price">0</span>
+								<span class="rouble">₽</span></p>
+						</div>
+						<!-- // Стоимость заказа -->
+
+					</div>
+
+					<!-- Оформить заказ -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" name="phone" placeholder="+7(___)___-__-__"  minlength="11" maxlength="16">
+							</div>
+							
+							<a href="#win" ><button type="button" class="btn btn-primary">Заказать</button></a>
+							<a href="#x" class="overlay" id="win"></a>
+							<div class="popup">
+							 Спасибо за заказ! По указанному Вами номеру телефона в течении 5 минут позвонит наш менеджер для уточнения заказа. 
+							  <img title="" src="https://podarokmos.ru/wp-content/uploads/a/9/8/a989eaeb4ce7917c97891e99b7236dd1.gif" width="4000" height="300" alt="" />
+							
+							<a class="close" title="Закрыть" href="#close" ></a>
+							</div>
+						</form>
+					</div>
+					<!-- // Оформить заказ -->
+
+				</div>
+				<!-- // Корзина -->
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Подключаем скрипты -->
+
+	<script src="./js/renderProducts_sab.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+
+</body>
+</html>
+

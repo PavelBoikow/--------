@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"title": "Focal PS 165 F3E",
+		"itemsInBox": 6,
+		"weight": 180,
+		"price": 41990,
+		"imgSrc": "Focal_PS_165_F3E.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Hertz C 165 L",
+		"itemsInBox": 6,
+		"weight": 205,
+		"price": 8990,
+		"imgSrc": "Hertz_C_165_L.jpeg"
+	},
+	{
+		"id": 3,
+		"title": "Focal RCX-570",
+		"itemsInBox": 6,
+		"weight": 182,
+		"price": 5990,
+		"imgSrc": "Focal_RCX-570.jpg"
+	},
+	{
+		"id": 4,
+		"title": "DL Audio Gryphon Lite 165 V.2",
+		"itemsInBox": 6,
+		"weight": 230,
+		"price": 2990,
+		"imgSrc": "DL_Audio.jpg"
+	}
+]
